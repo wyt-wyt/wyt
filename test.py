@@ -1,1 +1,3 @@
-print("HELLO my first job")
+import os
+
+print(os.path)
