@@ -8,3 +8,10 @@ Flask-Script和Flask本身的工作方式类似。只需要定义和添加能从
 Flask-Script 的作用是可以通过命令行的方式来操作 Flask。例如通过命令跑一个开发版本的服务器、设置数据库、定时任务等。
 ~~~
 
+flask项目中app在那个目录下定义，启动项目的时候，就会把那个目录作为base函数的目录
+~~~
+manage.py函数作为app和manage相连接的一个定义
+
+项目中src下的init文件中作为创建app和db的初始化模块，main函数也是在这个模块定义的
+
+config文件作为定义一些基础的配置类，如：mysql的url、redis配置等
